@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import ProjectCard from "../components/ProjectCard";
+import { projects } from "../data/projectsData";  // Import project data
 
 const ProjectsSection = styled.section`
   display: flex;
@@ -31,35 +32,6 @@ const ProjectsContainer = styled.div`
   width: 100%;
   max-width: 1000px;
 `;
-
-const projects = [
-  {
-    title: "Web Scraper",
-    description: "A Python-based web scraper for extracting data from e-commerce sites.",
-    code: "import requests\nfrom bs4 import BeautifulSoup\n\nurl = 'https://example.com'\nresponse = requests.get(url)\nsoup = BeautifulSoup(response.text, 'html.parser')\nprint(soup.title.text)",
-    repoLink: "https://github.com/your-repo/web-scraper",
-    technologies: [
-        { name: "Python", icon: "/icons/python.png" },
-        { name: "Selenium", icon: "/icons/selenium.png" },
-        { name: "SQL", icon: "/icons/sql.png" },
-        { name: "SQL", icon: "/icons/flask.png" },
-        { name: "SQL", icon: "/icons/fastapi.png" },
-        { name: "SQL", icon: "/icons/git.png" },
-        { name: "SQL", icon: "/icons/azure.png" }
-      ],
-  },
-  {
-    title: "Automated Report Generator",
-    description: "Generates PDF reports using Python and Pandas.",
-    code: "import pandas as pd\nfrom fpdf import FPDF\n\ndata = pd.DataFrame({'Name': ['Alice', 'Bob'], 'Score': [90, 85]})\npdf = FPDF()\npdf.add_page()\npdf.set_font('Arial', 'B', 16)\npdf.cell(40, 10, 'Student Scores')\npdf.output('report.pdf')",
-    repoLink: "https://github.com/your-repo/report-generator",
-    technologies: [
-        { name: "Python", icon: "/icons/python.png" },
-        { name: "Selenium", icon: "/icons/selenium.png" },
-        { name: "SQL", icon: "/icons/sql.jpg" }
-      ],
-  }
-];
 
 const Projects = () => {
   return (
