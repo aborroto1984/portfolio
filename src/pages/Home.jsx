@@ -22,7 +22,7 @@ const HeroImage = styled.div`
   background-color: #4a5568;
   border-radius: 50%;
   margin-bottom: 16px;
-  background-image: url("https://drive.google.com/file/d/10gm-j5Qv9U1KlS5dZ8_TOsurloCFXxGO/view?usp=drive_link");
+  background-image: url('${process.env.PUBLIC_URL}/hero_image.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
