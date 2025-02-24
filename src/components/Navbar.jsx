@@ -83,10 +83,12 @@ const Navbar = () => {
       </MenuIcon>
 
       <NavLinks isOpen={menuOpen}>
-        <StyledLink to="/" onClick={() => setMenuOpen(false)}>Home</StyledLink>
-        <StyledLink to="/about" onClick={() => setMenuOpen(false)}>About</StyledLink>
-        <StyledLink to="/projects" onClick={() => setMenuOpen(false)}>Projects</StyledLink>
-        <StyledLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</StyledLink>
+      <StyledLink to="/#/" onClick={() => setMenuOpen(false)}>Home</StyledLink>
+      <StyledLink to="/#/about" onClick={() => setMenuOpen(false)}>About</StyledLink>
+      <StyledLink to="/#/projects" onClick={() => setMenuOpen(false)}>Projects</StyledLink>
+      <StyledLink to="/#/contact" onClick={() => setMenuOpen(false)}>Contact</StyledLink>
+      <NameButton to="/#/">{`Alfredo Borroto`}</NameButton>
+
       </NavLinks>
     </Nav>
   );
