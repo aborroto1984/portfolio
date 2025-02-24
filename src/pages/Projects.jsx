@@ -38,7 +38,7 @@ const Projects = () => {
     <>
       <Navbar />
       <ProjectsSection>
-        <Title>My Projects</Title>
+        <Title>Some of My Projects</Title>
         <ProjectsContainer>
           {projects.map((project, index) => (
             <ProjectCard key={index} {...project} />

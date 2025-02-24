@@ -1,25 +1,18 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import emailjs from "emailjs-com";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+
 
 const ContactSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  min-height: 100vh;
-  padding: 24px;
+  padding: 80px 24px 40px;
   background: linear-gradient(to bottom, #1a202c, #2d3748, #1a202c);
   color: white;
-`;
-
-const Title = styled.h1`
-  font-size: 3rem;
-  font-weight: 800;
-  margin-bottom: 16px;
-  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
 `;
 
 const Form = styled.form`
@@ -38,6 +31,8 @@ const Input = styled.input`
   border: none;
   border-radius: 4px;
   font-size: 1rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
 `;
 
 const TextArea = styled.textarea`
@@ -46,6 +41,8 @@ const TextArea = styled.textarea`
   border-radius: 4px;
   font-size: 1rem;
   resize: none;
+  background: rgba(255, 255, 255, 0.9);
+  color: black;
 `;
 
 const Button = styled.button`
@@ -56,15 +53,22 @@ const Button = styled.button`
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 
   &:hover {
     background-color: #2b6cb0;
+    transform: scale(1.05);
+  }
+
+  &:disabled {
+    background-color: #5a7184;
+    cursor: not-allowed;
   }
 `;
 
 const Contact = () => {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
+  const [submitted, setSubmitted] = useState(false);
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -72,24 +76,42 @@ const Contact = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Form Submitted:", formData);
-    // Handle form submission logic here
+
+    emailjs.send(
+      "service_zxxclhh",
+      "template_8od8mii",
+      {
+        name: formData.name, 
+        email: formData.email, 
+        message: formData.message
+      },
+      "2sOBsWKuOH5dIypWL"
+    )
+    .then((response) => {
+      console.log("Email sent successfully!", response);
+      setSubmitted(true);
+      setTimeout(() => setSubmitted(false), 3000);
+    })
+    .catch((error) => {
+      console.error("Failed to send email", error);
+    });
   };
 
   return (
     <>
-      <Navbar />
+    <Navbar />  
       <ContactSection>
-        <Title>Contact Me</Title>
+        <h1>Contact Me</h1>
         <Form onSubmit={handleSubmit}>
           <Input type="text" name="name" placeholder="Your Name" value={formData.name} onChange={handleChange} required />
           <Input type="email" name="email" placeholder="Your Email" value={formData.email} onChange={handleChange} required />
           <TextArea name="message" rows="5" placeholder="Your Message" value={formData.message} onChange={handleChange} required />
-          <Button type="submit">Send Message</Button>
+          <Button type="submit" disabled={submitted}>{submitted ? "Sent!" : "Send Message"}</Button>
         </Form>
+        {submitted && <p style={{ color: "lightgreen", marginTop: "10px" }}>Message sent successfully!</p>}
       </ContactSection>
-      <Footer />
-    </>
+    <Footer />
+  </>
   );
 };
 

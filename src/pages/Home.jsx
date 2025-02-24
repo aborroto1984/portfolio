@@ -22,6 +22,10 @@ const HeroImage = styled.div`
   background-color: #4a5568;
   border-radius: 50%;
   margin-bottom: 16px;
+  background-image: url("https://media.licdn.com/dms/image/v2/D4E03AQF1dbJK9k_9mQ/profile-displayphoto-shrink_400_400/B4EZUasE4JHMAk-/0/1739909518034?e=1746057600&v=beta&t=_NK6mcJXigMliPfzcI7GebzqJrnIzgISSEqQCnR4wgw");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 `;
 
 const Title = styled.h1`
@@ -65,9 +69,19 @@ const Home = () => {
           Full Stack Developer | Automation Expert | Problem Solver
         </Description>
         <Description>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-          tincidunt metus a lorem malesuada, vel tempor ipsum blandit. Quisque
-          vestibulum nunc sit amet nisl gravida, nec pretium justo vulputate.
+          <div style={{ textAlign: "left" }}>
+            <p>
+            I'm, a Full Stack Software Engineer with a passion for building efficient, scalable, and user-friendly applications. With expertise in React, Angular, Python, and SQL, I specialize in crafting automation solutions and intuitive interfaces that streamline operations and enhance productivity.
+            Over the years, I have successfully:
+            </p>
+            <ul>
+              <li>Automated workflows, reducing 8,580+ hours of manual labor annually and saving companies $171,600+ per year.</li>
+              <li>Developed enterprise-level order management systems, improving efficiency by 80%.</li>
+              <li>Integrated APIs for Amazon, QuickBooks, and FTP-based solutions to ensure seamless data synchronization.</li>
+            </ul>
+          <p>My experience spans front-end UI development, backend integration, and DevOps, allowing me to bridge the gap between design and functionality. Whether it’s creating sleek user interfaces with Angular and Bootstrap, or building API-driven systems with Python and Flask, I am always focused on delivering high-performance and scalable solutions.</p>
+          <p>If you're looking for a UI Developer or Full Stack Engineer to bring innovation and technical expertise to your team, let’s connect!</p>
+          </div>
         </Description>
         <StyledLink to="/projects">View My Work</StyledLink>
       </Section>
