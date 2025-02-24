@@ -18,7 +18,7 @@
     "web-vitals": "^2.1.4",
     "webpack": "^5.88.2"
   },
-  "homepage": "https://aborroto1984.github.io/portfolio/",
+  "homepage": "https://aborroto1984.github.io/portfolio",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
