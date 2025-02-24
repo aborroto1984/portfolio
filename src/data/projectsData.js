@@ -554,3 +554,5 @@ python main.py
     ]
   }
 ];
+
+// Icons are now fixed
