@@ -17,8 +17,8 @@ const Section = styled.section`
 `;
 
 const HeroImage = styled.div`
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   background-color: #4a5568;
   border-radius: 50%;
   margin-bottom: 16px;
