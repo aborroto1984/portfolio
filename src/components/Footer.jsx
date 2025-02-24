@@ -1,13 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-const ContainerSection = styled.section
-`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  `;
 
 const FooterContainer = styled.footer`
   display: flex;
