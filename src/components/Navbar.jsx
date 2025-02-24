@@ -76,19 +76,19 @@ const Navbar = () => {
 
   return (
     <Nav>
-      <NameButton to="/">Alfredo Borroto</NameButton>
-      
+      <NameButton to="/" onClick={() => setMenuOpen(false)}>
+        Alfredo Borroto
+      </NameButton>
+
       <MenuIcon onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <FiX /> : <FiMenu />}
       </MenuIcon>
 
       <NavLinks isOpen={menuOpen}>
-      <StyledLink to="/#/" onClick={() => setMenuOpen(false)}>Home</StyledLink>
-      <StyledLink to="/#/about" onClick={() => setMenuOpen(false)}>About</StyledLink>
-      <StyledLink to="/#/projects" onClick={() => setMenuOpen(false)}>Projects</StyledLink>
-      <StyledLink to="/#/contact" onClick={() => setMenuOpen(false)}>Contact</StyledLink>
-      <NameButton to="/#/">{`Alfredo Borroto`}</NameButton>
-
+        <StyledLink to="/" onClick={() => setMenuOpen(false)}>Home</StyledLink>
+        <StyledLink to="/about" onClick={() => setMenuOpen(false)}>About</StyledLink>
+        <StyledLink to="/projects" onClick={() => setMenuOpen(false)}>Projects</StyledLink>
+        <StyledLink to="/contact" onClick={() => setMenuOpen(false)}>Contact</StyledLink>
       </NavLinks>
     </Nav>
   );

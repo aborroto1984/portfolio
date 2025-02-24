@@ -120,14 +120,14 @@ python main.py
     ],
     "repoLink": "https://github.com/aborroto1984/dropship_order_intake",
     "technologies": [
-      { name: "Python", icon: "/icons/python.png" },
-      { name: "API", icon: "/icons/API.png" },
-      { name: "Azure", icon: "/icons/azure.png" },
-      { name: "Pandas", icon: "/icons/pandas.png" },
-      { name: "SQL", icon: "/icons/sql.png" },
-      { name: "Git", icon: "/icons/git.png" },
-      { name: "Numpy", icon: "/icons/numpy.png" },
-      { name: "Files.com", icon: "/icons/files.png" },
+      { name: "Python", icon: `${process.env.PUBLIC_URL}/icons/python.png` },
+      { name: "API", icon: `${process.env.PUBLIC_URL}/icons/API.png` },
+      { name: "Azure", icon: `${process.env.PUBLIC_URL}/icons/azure.png` },
+      { name: "Pandas", icon: `${process.env.PUBLIC_URL}/icons/pandas.png` },
+      { name: "SQL", icon: `${process.env.PUBLIC_URL}/icons/sql.png` },
+      { name: "Git", icon: `${process.env.PUBLIC_URL}/icons/git.png` },
+      { name: "Numpy", icon: `${process.env.PUBLIC_URL}/icons/numpy.png` },
+      { name: "Files.com", icon: `${process.env.PUBLIC_URL}/icons/files.png` },
     ]
   },
   {
@@ -277,15 +277,16 @@ python main.py
     ],
     "repoLink": "https://github.com/aborroto1984/dropship_order_invoice_report",
     "technologies": [
-      { name: "Python", icon: "/icons/python.png" },
-      { name: "API", icon: "/icons/API.png" },
-      { name: "Azure", icon: "/icons/azure.png" },
-      { name: "SQL", icon: "/icons/sql.png" },
-      { name: "Git", icon: "/icons/git.png" },
-      { name: "QuickBooks", icon: "/icons/quickbooks.webp" },
-      { name: "Pandas", icon: "/icons/pandas.png" },
-      { name: "Files.com", icon: "/icons/files.png" },
-      { name: "SellerCloud", icon: "/icons/sellercloud.png" },
+      // eslint-disable-next-line no-template-curly-in-string
+      { name: "Python", icon: `${process.env.PUBLIC_URL}/icons/Python.png`},
+      { name: "API", icon: `${process.env.PUBLIC_URL}/icons/API.png`},
+      { name: "Azure", icon: `${process.env.PUBLIC_URL}/icons/azure.png` },
+      { name: "SQL", icon: `${process.env.PUBLIC_URL}/icons/sql.png` },
+      { name: "Git", icon: `${process.env.PUBLIC_URL}/icons/git.png` },
+      { name: "QuickBooks", icon: `${process.env.PUBLIC_URL}/icons/quickbooks.webp` },
+      { name: "Pandas", icon: `${process.env.PUBLIC_URL}/icons/pandas.png` },
+      { name: "Files.com", icon: `${process.env.PUBLIC_URL}/icons/files.png` },
+      { name: "SellerCloud", icon: `${process.env.PUBLIC_URL}/icons/sellercloud.png` },
     ]
   },
   {
@@ -331,12 +332,12 @@ python main.py
     ],
     "repoLink": "https://github.com/aborroto1984/dropship_order_sellercloud_upload",
     "technologies": [
-      { name: "Python", icon: "/icons/python.png" },
-      { name: "API", icon: "/icons/API.png" },
-      { name: "Azure", icon: "/icons/azure.png" },
-      { name: "SQL", icon: "/icons/sql.png" },
-      { name: "Git", icon: "/icons/git.png" },
-      { name: "SellerCloud", icon: "/icons/sellercloud.png" },
+      { name: "Python", icon: `${process.env.PUBLIC_URL}/icons/python.png` },
+      { name: "API", icon: `${process.env.PUBLIC_URL}/icons/API.png` },
+      { name: "Azure", icon: `${process.env.PUBLIC_URL}/icons/azure.png` },
+      { name: "SQL", icon: `${process.env.PUBLIC_URL}/icons/sql.png` },
+      { name: "Git", icon: `${process.env.PUBLIC_URL}/icons/git.png` },
+      { name: "SellerCloud", icon: `${process.env.PUBLIC_URL}/icons/sellercloud.png` },
     ]
   },
   {
@@ -382,14 +383,14 @@ python main.py
     ],
     "repoLink": "https://github.com/aborroto1984/dropship_order_tracking_report",
     "technologies": [
-      { name: "Python", icon: "/icons/python.png" },
-      { name: "API", icon: "/icons/API.png" },
-      { name: "Azure", icon: "/icons/azure.png" },
-      { name: "SQL", icon: "/icons/sql.png" },
-      { name: "Git", icon: "/icons/git.png" },
-      { name: "SellerCloud", icon: "/icons/sellercloud.png" },
-      { name: "Files.com", icon: "/icons/files.png" },
-      { name: "Pandas", icon: "/icons/pandas.png" },
+      { name: "Python", icon: `${process.env.PUBLIC_URL}/icons/python.png` },
+      { name: "API", icon: `${process.env.PUBLIC_URL}/icons/API.png` },
+      { name: "Azure", icon: `${process.env.PUBLIC_URL}/icons/azure.png` },
+      { name: "SQL", icon: `${process.env.PUBLIC_URL}/icons/sql.png` },
+      { name: "Git", icon: `${process.env.PUBLIC_URL}/icons/git.png` },
+      { name: "SellerCloud", icon: `${process.env.PUBLIC_URL}/icons/sellercloud.png` },
+      { name: "Files.com", icon: `${process.env.PUBLIC_URL}/icons/files.png` },
+      { name: "Pandas", icon: `${process.env.PUBLIC_URL}/icons/pandas.png` },
     ]
   },
   {
@@ -435,13 +436,13 @@ python main.py
     ],
     "repoLink": "https://github.com/aborroto1984/pdf_invoice_report",
     "technologies": [
-      { name: "Python", icon: "/icons/python.png" },
-      { name: "API", icon: "/icons/API.png" },
-      { name: "Azure", icon: "/icons/azure.png" },
-      { name: "SQL", icon: "/icons/sql.png" },
-      { name: "Git", icon: "/icons/git.png" },
-      { name: "SellerCloud", icon: "/icons/sellercloud.png" },
-      { name: "ReportLab", icon: "/icons/reportlab.webp" },
+      { name: "Python", icon: `${process.env.PUBLIC_URL}/icons/python.png` },
+      { name: "API", icon: `${process.env.PUBLIC_URL}/icons/API.png` },
+      { name: "Azure", icon: `${process.env.PUBLIC_URL}/icons/azure.png` },
+      { name: "SQL", icon: `${process.env.PUBLIC_URL}/icons/sql.png` },
+      { name: "Git", icon: `${process.env.PUBLIC_URL}/icons/git.png` },
+      { name: "SellerCloud", icon: `${process.env.PUBLIC_URL}/icons/sellercloud.png` },
+      { name: "ReportLab", icon: `${process.env.PUBLIC_URL}/icons/reportlab.webp` },
     ]
   },
   {
@@ -487,13 +488,13 @@ python main.py
     ],
     "repoLink": "https://github.com/aborroto1984/qb_journal_entry_creator",
     "technologies": [
-      { name: "Python", icon: "/icons/python.png" },
-      { name: "API", icon: "/icons/API.png" },
-      { name: "Azure", icon: "/icons/azure.png" },
-      { name: "SQL", icon: "/icons/sql.png" },
-      { name: "Git", icon: "/icons/git.png" },
-      { name: "SellerCloud", icon: "/icons/sellercloud.png" },
-      { name: "QuickBooks", icon: "/icons/quickbooks.webp" },
+      { name: "Python", icon: `${process.env.PUBLIC_URL}/icons/python.png` },
+      { name: "API", icon: `${process.env.PUBLIC_URL}/icons/API.png` },
+      { name: "Azure", icon: `${process.env.PUBLIC_URL}/icons/azure.png` },
+      { name: "SQL", icon: `${process.env.PUBLIC_URL}/icons/sql.png` },
+      { name: "Git", icon: `${process.env.PUBLIC_URL}/icons/git.png` },
+      { name: "SellerCloud", icon: `${process.env.PUBLIC_URL}/icons/sellercloud.png` },
+      { name: "QuickBooks", icon: `${process.env.PUBLIC_URL}/icons/quickbooks.webp` },
     ]
   },
   {
@@ -543,12 +544,12 @@ python main.py
     ],
     "repoLink": "https://github.com/aborroto1984/returns_app",
     "technologies": [
-      { name: "Python", icon: "/icons/python.png" },
-      { name: "Azure", icon: "/icons/azure.png" },
-      { name: "SQL", icon: "/icons/sql.png" },
-      { name: "Git", icon: "/icons/git.png" },
-      { name: "ReportLab", icon: "/icons/reportlab.webp" },
-      { name: "PyQT5", icon: "/icons/pyqt.png" },
+      { name: "Python", icon: `${process.env.PUBLIC_URL}/icons/python.png` },
+      { name: "Azure", icon: `${process.env.PUBLIC_URL}/icons/azure.png` },
+      { name: "SQL", icon: `${process.env.PUBLIC_URL}/icons/sql.png` },
+      { name: "Git", icon: `${process.env.PUBLIC_URL}/icons/git.png` },
+      { name: "ReportLab", icon: `${process.env.PUBLIC_URL}/icons/reportlab.webp` },
+      { name: "PyQT5", icon: `${process.env.PUBLIC_URL}/icons/pyqt.png` },
     ]
   }
 ];
