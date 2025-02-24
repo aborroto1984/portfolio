@@ -22,7 +22,7 @@ const HeroImage = styled.div`
   background-color: #4a5568;
   border-radius: 50%;
   margin-bottom: 16px;
-  background-image: url("https://photos.app.goo.gl/Q9wvwAiJx7HcV52X9");
+  background-image: url("https://drive.google.com/file/d/10gm-j5Qv9U1KlS5dZ8_TOsurloCFXxGO/view?usp=drive_link");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
