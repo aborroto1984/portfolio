@@ -35,7 +35,7 @@ const Description = styled.p`
 const About = () => {
   return (
     <>
-    <Navbar />
+    {/* <Navbar /> */}
       <AboutSection>
         <Title>About Me</Title>
         <Description>
@@ -47,7 +47,7 @@ Looking ahead, I aspire to develop software solutions that impact even more peop
 Outside of coding, I’m a dedicated father, an avid problem solver, and a lifelong learner. Whether it's in my career or personal growth, sheer determination and a goal-oriented mindset have always driven me forward.
         </Description>
       </AboutSection>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

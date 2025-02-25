@@ -99,7 +99,7 @@ const Contact = () => {
 
   return (
     <>
-    <Navbar />  
+    {/* <Navbar />   */}
       <ContactSection>
         <h1>Contact Me</h1>
         <Form onSubmit={handleSubmit}>
@@ -110,7 +110,7 @@ const Contact = () => {
         </Form>
         {submitted && <p style={{ color: "lightgreen", marginTop: "10px" }}>Message sent successfully!</p>}
       </ContactSection>
-    <Footer />
+    {/* <Footer /> */}
   </>
   );
 };

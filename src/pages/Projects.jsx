@@ -36,7 +36,7 @@ const ProjectsContainer = styled.div`
 const Projects = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <ProjectsSection>
         <Title>Some of My Projects</Title>
         <ProjectsContainer>
@@ -45,7 +45,7 @@ const Projects = () => {
           ))}
         </ProjectsContainer>
       </ProjectsSection>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

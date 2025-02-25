@@ -7,6 +7,8 @@ const FooterContainer = styled.footer`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-top: 24px;
+
   background-color: #1a202c;
   color: white;
   text-align: center;
@@ -17,6 +19,7 @@ const FooterContainer = styled.footer`
 
 const FooterLinks = styled.div`
   margin-top: 8px;
+  margin-bottom: 24px;
   display: flex;
   gap: 16px;
 `;
@@ -36,9 +39,9 @@ const Footer = () => {
     <FooterContainer>
       <p>&copy; {new Date().getFullYear()} Alfredo Borroto. All rights reserved.</p>
       <FooterLinks>
-        <FooterLink href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</FooterLink>
-        <FooterLink href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</FooterLink>
-        <FooterLink href="mailto:example@email.com">Email</FooterLink>
+        <FooterLink href="https://github.com/aborroto1984" target="_blank" rel="noopener noreferrer">GitHub</FooterLink>
+        <FooterLink href="https://www.linkedin.com/in/aborroto1984" target="_blank" rel="noopener noreferrer">LinkedIn</FooterLink>
+        <FooterLink href="mailto:aborroto1984@gmail.com.com">Email</FooterLink>
       </FooterLinks>
     </FooterContainer>
   );

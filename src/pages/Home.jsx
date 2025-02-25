@@ -61,7 +61,7 @@ const StyledLink = styled(Link)`
 const Home = () => {
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <Section>
         <HeroImage />
         <Title>Hi, I'm Alfredo Borroto</Title>
@@ -85,7 +85,7 @@ const Home = () => {
         </Description>
         <StyledLink to="/projects">View My Work</StyledLink>
       </Section>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

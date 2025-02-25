@@ -1,8 +1,11 @@
-/* src/styles/global.css */
+/* Set the base color to black */
 html, body {
+  background-color: #000 !important; /* Black background */
+  color: white !important; /* White text */
   height: auto !important;
   min-height: 100vh;
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+
   
